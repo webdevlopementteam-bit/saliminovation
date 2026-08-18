@@ -101,7 +101,7 @@ const expertise = [
 
 export default function Services() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] py-16 md:py-24">
+    <section className="relative overflow-hidden bg-[#050505] py-16 ">
       {/* =====================================================
           BACKGROUND
       ===================================================== */}

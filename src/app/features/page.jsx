@@ -9,63 +9,10 @@ import {
   FaCogs,
   FaCheckCircle,
   FaArrowRight,
-  FaCog,
-  FaUsers,
-  FaBullseye,
-  FaClock,
-  FaSmile,
+
 } from "react-icons/fa";
 
-const capabilities = [
-  {
-    id: 1,
-    icon: <FaCheckCircle />,
-    number: "01",
-    title: "High Quality Raw Materials",
-    description:
-      "We use premium MS & SS raw materials to ensure durability, strength and superior product performance.",
-  },
-  {
-    id: 2,
-    icon: <FaCog />,
-    number: "02",
-    title: "Advanced Machinery & Technology",
-    description:
-      "Modern CNC machines and laser technology deliver precision, efficiency and cutting-edge manufacturing.",
-  },
-  {
-    id: 3,
-    icon: <FaUsers />,
-    number: "03",
-    title: "Skilled & Experienced Team",
-    description:
-      "Our trained professionals bring expertise and craftsmanship to every project for reliable outcomes.",
-  },
-  {
-    id: 4,
-    icon: <FaBullseye />,
-    number: "04",
-    title: "Precision & Accuracy in Every Product",
-    description:
-      "We focus on dimensional accuracy, perfect finishing and consistent quality across all components.",
-  },
-  {
-    id: 5,
-    icon: <FaClock />,
-    number: "05",
-    title: "Timely Delivery",
-    description:
-      "Organized production planning and efficient processes ensure projects are delivered on schedule.",
-  },
-  {
-    id: 6,
-    icon: <FaSmile />,
-    number: "06",
-    title: "Customer Satisfaction is Our Priority",
-    description:
-      "We prioritize client needs, delivering solutions that meet expectations and build long-term trust.",
-  },
-];
+
 
 const processPoints = [
   "Laser Cutting ",
@@ -81,7 +28,7 @@ export default function Features() {
   return (
     <section
       id="why-choose-us"
-      className="relative overflow-hidden bg-[#050505] py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#050505] py-20"
     >
       {/* ================= BACKGROUND ================= */}
 
@@ -103,7 +50,7 @@ export default function Features() {
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-6">
         {/* ================= HEADER ================= */}
 
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-4xl md:text-center">
           <span className="inline-flex rounded-full border border-orange-500/30 bg-orange-500/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-orange-400 sm:text-sm">
             Why Choose SALIM Innovations
           </span>
@@ -122,8 +69,18 @@ export default function Features() {
             manufacturing capabilities are designed to handle demanding
             industrial requirements with accuracy, consistency and efficiency.
           </p>
-        </div>
 
+          
+            <div className="md:hidden relative overflow-hidden rounded-[32px] border border-orange-500/20 bg-[#101010] mt-3">
+              <Image
+                src="/images/welding1.jpg"
+                alt="SALIM INNOVATIONS industrial manufacturing"
+                width={800}
+                height={700}
+                className="h-[380px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[480px]"
+              /></div>
+        </div>
+         
         {/* ================= CAPABILITY INTRO ================= */}
 
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -132,7 +89,7 @@ export default function Features() {
           <div className="relative order-2 lg:order-1">
             <div className="absolute -inset-6 rounded-[40px] bg-orange-500/10 blur-[80px]" />
 
-            <div className="relative overflow-hidden rounded-[32px] border border-orange-500/20 bg-[#101010]">
+            <div className="hidden md:block relative overflow-hidden rounded-[32px] border border-orange-500/20 bg-[#101010]">
               <Image
                 src="/images/welding1.jpg"
                 alt="SALIM INNOVATIONS industrial manufacturing"
@@ -215,67 +172,8 @@ export default function Features() {
           </div>
         </div>
 
-        {/* ================= CAPABILITY CARDS ================= */}
 
-        <div className="mt-20 lg:mt-28">
-          <div className="mb-10 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-            <div>
-              <span className="text-sm font-bold uppercase tracking-[3px] text-orange-400">
-                What We Do
-              </span>
-
-              <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
-                Our Manufacturing Capabilities
-              </h3>
-            </div>
-
-            <p className="max-w-xl text-sm leading-7 text-gray-500">
-              Flexible manufacturing capabilities for components, assemblies and
-              fabrication requirements across multiple industries.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {capabilities.map((item) => (
-              <div
-                key={item.id}
-                className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-br from-[#141414] via-[#101010] to-[#090909] p-6 transition-all duration-500 hover:-translate-y-2 hover:border-orange-500/50 hover:shadow-[0_20px_60px_rgba(255,140,0,.12)] sm:p-7"
-              >
-                {/* Background Glow */}
-
-                <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-orange-500/10 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
-
-                {/* Number */}
-
-                <span className="absolute right-6 top-5 text-4xl font-black text-white/[0.04] transition duration-500 group-hover:text-orange-500/10">
-                  {item.number}
-                </span>
-
-                {/* Icon */}
-
-                <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#FF7A00] to-[#FFC107] text-2xl text-white shadow-[0_10px_35px_rgba(255,140,0,.25)] transition duration-500 group-hover:rotate-6 group-hover:scale-110">
-                  {item.icon}
-                </div>
-
-                {/* Title */}
-
-                <h3 className="relative mt-6 text-xl font-bold text-white transition duration-300 group-hover:text-orange-300">
-                  {item.title}
-                </h3>
-
-                {/* Description */}
-
-                <p className="relative mt-4 text-sm leading-7 text-gray-400">
-                  {item.description}
-                </p>
-
-                {/* Bottom Line */}
-
-                <div className="mt-7 h-[3px] w-12 rounded-full bg-gradient-to-r from-orange-500 to-yellow-400 transition-all duration-500 group-hover:w-full" />
-              </div>
-            ))}
-          </div>
-        </div>
+       
 
         {/* ================= BOTTOM FEATURE STRIP ================= */}
 

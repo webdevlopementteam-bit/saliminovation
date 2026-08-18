@@ -100,8 +100,8 @@ export default function Navbar() {
                 <Image
                   src="/logo/logo.png"
                   alt="Logo"
-                  width={50}
-                  height={50}
+                  width={60}
+                  height={60}
                   priority
                   className="w-12 h-auto rounded-lg object-contain"
                 />

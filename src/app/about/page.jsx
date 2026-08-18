@@ -67,22 +67,19 @@ export default function About() {
             HEADER
         ====================================================== */}
 
-        <div className="mx-auto mb-16 max-w-4xl  text-start md:text-center">
+        <div className="mx-auto mb-16 max-w-6xl  text-start md:text-center">
           <span className="inline-flex rounded-full border border-orange-500/30 bg-orange-500/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-orange-400 shadow-[0_0_25px_rgba(255,122,0,0.08)] sm:text-sm">
             About SALIM INNOVATIONS
           </span>
 
-          <div className="mt-6">
+          <div className="hidden md:block mt-6 bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-400 bg-clip-text text-2xl font-extrabold text-transparent sm:text-3xl md:text-4xl lg:text-5xl">
             <span className="text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl">
               MS & SS
-            </span>
+            </span> Manufacturing Experts
 
-            <span className="block bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-400 bg-clip-text text-2xl font-extrabold text-transparent sm:text-3xl md:text-4xl lg:text-5xl">
-              Manufacturing Experts
-            </span>
           </div>
 
-          <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-gray-400 sm:text-base md:text-lg md:leading-8">
+          <p className="hidden md:block mx-auto mt-6 max-w-6xl text-sm leading-7 text-gray-400 sm:text-base md:text-lg md:leading-8">
             SALIM INNOVATIONS is a complete MS & SS manufacturing, fabrication
             and industrial job work solution provider. We undertake all types of
             customized manufacturing and fabrication work as per customer

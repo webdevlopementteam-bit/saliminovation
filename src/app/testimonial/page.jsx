@@ -58,7 +58,7 @@ export default function Testimonial() {
 
   if (!mounted) return null;
   return (
-    <section className="relative overflow-hidden bg-[#030303] py-8 sm:py-14 lg:py-20">
+    <section className="relative overflow-hidden bg-[#030303] py-5 sm:py-14 lg:py-20">
       {/* Background Effects */}
       <div className="absolute -left-40 top-0 h-[350px] w-[350px] rounded-full bg-orange-500/20 blur-[120px]" />
       <div className="absolute -right-40 bottom-0 h-[350px] w-[350px] rounded-full bg-yellow-500/15 blur-[120px]" />
